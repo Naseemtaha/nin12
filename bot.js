@@ -321,7 +321,7 @@ client.on('message', message => {
        if(message.content.startsWith(prefix + 'تفعيل')) {
         let modlog = client.channels.find('name', 'فعل-نفسك');
        if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
-       message.channel.sendMessage(`**نورت سيرفر لاست كودز اضغط على الصح لتفعيل نفسك**`).then(msg => {
+       message.channel.sendMessage(`**نورت سيرفر اضغط على الصح لتفعيل نفسك**`).then(msg => {
        
        
         msg.react('✅')
